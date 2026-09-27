@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Welcome</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #073b8f;
+        }
+
+        .student-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .program {
+            font-size: 20px;
+            color: #555;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background-color: #073b8f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Mabuhay!</h1>
+
+    <p class="student-name">
+        {{ student_name }}
+    </p>
+
+    <p>
+        You are enrolled in:
+    </p>
+
+    <p class="program">
+        {{ program }}
+    </p>
+
+    <a href="{% url 'dynamic_form' %}">
+        Enter Another Student
+    </a>
+
+</div>
+
+</body>
+
+</html>
